@@ -3,23 +3,36 @@
     {
         "title":
         {
-            "image" : "custommainmenu:textures/gui/minecraft.png",
-            "posX" : -137,
-            "posY" : 30,
-            "width" : 512,
-            "height" : 512,
+            "image" : "modpack:logo.png",
+            "posX" : 0,
+            "posY" : 150,
+            "width" : 281,
+            "height" : 49,
             "alignment" : "top_center"
+        },
+		
+		 "buttonbg":
+        {
+            "image" : "modpack:buttonbg.png",
+            "posX" : 28,
+            "posY" : -250,
+            "width" : 220,
+            "height" : 1200,
+            "alignment" : "left_center"
+
         }
     },
-    
+	
+
     "buttons":
     {
         "singleplayer":
         {
+		    "texture" : "modpack:buttonmidt.png",  
             "text" : "menu.singleplayer",
-            "posX" : -100,
+            "posX" : -300,
             "posY" : 48,
-            "width" : 200,
+            "width" : 98,
             "height" : 20,
             "action" : 
             {
@@ -30,10 +43,11 @@
         
         "multiplayer":
         {
-            "text" : "menu.multiplayer",
-            "posX" : -100,
-            "posY" : 72,
-            "width" : 200,
+		    "texture" : "modpack:buttonmidt.png",  
+				"text" : "menu.multiplayer",
+            "posX" : -200,
+            "posY" : 48,
+            "width" : 98,
             "height" : 20,
             "action" : 
             {
@@ -44,10 +58,11 @@
         
         "mods":
         {
-            "text" : "fml.menu.mods",
-            "posX" : -100,
-            "posY" : 96,
-            "width" : 200,
+            "texture" : "modpack:buttonmidt.png",  
+			"text" : "fml.menu.mods",
+            "posX" : -300,
+            "posY" : 72,
+            "width" : 98,
             "height" : 20,
             "action" : 
             {
@@ -58,9 +73,10 @@
             
         "options":
         {
-            "text" : "menu.options",
-            "posX" : -100,
-            "posY" : 132,
+            "texture" : "modpack:buttonmidt.png",
+			"text" : "menu.options",
+            "posX" : -200,
+            "posY" : 72,
             "width" : 98,
             "height" : 20,
             "action" : 
@@ -72,9 +88,10 @@
         
         "quit":
         {
+            "texture" : "modpack:buttonmidt.png",
             "text" : "menu.quit",
-            "posX" : 2,
-            "posY" : 132,
+            "posX" : -250,
+            "posY" : 100,
             "width" : 98,
             "height" : 20,
             "action" : 
@@ -82,12 +99,14 @@
                 "type" : "quit"
             }
         },
+		
+		
         
         "language":
         {
             "text" : "",
             "posX" : -124,
-            "posY" : 132,
+            "posY" : 100,
             "width" : 20,
             "height" : 20,
             "action" : 
@@ -100,7 +119,7 @@
         "refresh":
         {
             "text" : "",
-            "posX" : -154,
+            "posX" : -154999,
             "posY" : 132,
             "width" : 20,
             "height" : 20,
@@ -116,40 +135,23 @@
     {
         "mojang":
         {
-            "text" : "Copyright Mojang AB. Do not distribute!",
-            "posX" : -197,
+            "text" : "A Crimson Pack",
+            "posX" : -100,
             "posY" : -10,
             "color" : -1,
             "alignment" : "bottom_right"
-        },
-        
-        "fml":
-        {
-            "text" : "",
-            "posX" : 2,
-            "posY" : -40,
-            "color" : -1,
-            "alignment" : "bottom_left"
         }
+        
     },
     
     "other":
-    {
-        "splash-text":
-        {
-            "posX" : 90,
-            "posY" : 70,
-            "color" : -256,
-            "alignment" : "top_center",
-            "texts" : "file:minecraft:texts/splashes.txt"
-        },
-        
+    { 
         "panorama":
         {
-            "images" : "minecraft:textures/gui/title/background/panorama_%c.png",
-            "animate" : true,
-            "animationSpeed" : 1,
-            "blur" : true,
+            "images" : "modpack:panorama_%c.png",
+            "animate" : true	,
+            "animationSpeed" : 2,
+            "blur" : false,
             "gradient" : true
         }
     }
